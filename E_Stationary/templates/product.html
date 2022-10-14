@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  <div class="container mt-3  bg-light " >
+  <div class="container mt-3 bg-light " >
     <div class="dropdown  ">
         <button class="btn ms-3 mt-4 btn-white rounded-0 text-dark border shadow-sm shadow border-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Select Catogeries
@@ -13,8 +13,6 @@
           <li><a class="dropdown-item" href="#">Note books</a></li>
         </ul>
       </div>
-
-
 
 
 
@@ -38,30 +36,8 @@
           </div>
           {% endfor %}
         </div>
+</div>
+</div>
 
-         <!-- colun wise print  -->
-    <div class="container">
-      <div class="row align-items-start">
-          <!-- for card printing  -->
-          {%for i in product%}
-        <div class="col">
-          <div class="mt-4 card bg-white border rounded rounded-0 " style="width: 12rem;">
-              <img src="{{i.image.url}}" class="card-img-top borderrounded rounded-4" alt="...">
-              <div class="card-body">
-                <h5 class="card-title larg mt-1" style="font-family: 'Josefin Sans', sans-serif;">{{i.name}}</h5>
-                  <p class="text"><span>&#8377;</span>{{i.price}}&emsp;<del class="text disabled text-secondary"><span>&#8377;</span>{{i.discount}}</del>&emsp;<b class="text-success">%2 off</b></p>
-                <p class="text">
-                  {{i.desc}}
-                </p>
-                <a href="#" class="btn btn-light border rounded-0 text-dark border-dark shadow-sm ">Add to Cart</a>
-              </div>
-            </div>
-        </div>
-        {% endfor %}
-      </div>
-
-      
-        
-      </div>
     
 {% endblock %}
