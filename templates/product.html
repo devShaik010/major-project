@@ -7,17 +7,11 @@
   <div class="col-lg-2 mx-auto mt border-end ">
     <!-- Hover added -->
     <div class="list-group mt-3 "   >
-      <a href="/" class="list-group-item list-group-item-action border rounded-2 mb-1 text-center border-success shadow-lg">See All</a>
+      <a href="?" class="list-group-item list-group-item-action border rounded-2 mb-1 text-center border-success shadow-lg">See All</a>
     </div>
     {% for i in catogereis %}
     <div class="list-group  ">
-      <a href="/?cetogery={{i.id}}" class="list-group-item mb-1 list-group-item-action border rounded-6 shadow-sm " >
-        <!-- <lord-icon
-            src="https://cdn.lordicon.com/clcopglh.json"
-            trigger="loop"
-            colors="primary:#121331,secondary:#16c72e"
-            stroke="25"
-            style="width:35px;height:35px"> -->
+      <a href="?categories={{i.id}}"  class="list-group-item mb-1 list-group-item-action border rounded-6 shadow-sm " >
         </lord-icon>{{i.name}}</a>
     </div>
     {% endfor %}
