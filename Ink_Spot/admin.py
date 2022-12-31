@@ -9,13 +9,13 @@ class Book_display(admin.ModelAdmin):
     list_display = ['name', 'a_uth', 'desc', 'b_categories']
     
 class B_categories_display(admin.ModelAdmin):
-    list_display = ['name']
+    list_display = ['name','id']
 
 class product_display(admin.ModelAdmin):
     list_display = ['name', 'price', 'desc', 'categories']
     
 class categories_display(admin.ModelAdmin):
-    list_display = ['name']
+    list_display = ['name','id']
 
 
 # Register your models here.
